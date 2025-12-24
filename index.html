@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMB TransMobilité | L'Expertise du Transport à Dakar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); }
+        [x-cloak] { display: none !important; }
+        .bg-heritage { background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1514367741144-8855b93e80fb?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-attachment: fixed; }
+    </style>
+</head>
+<body class="bg-white text-slate-900" x-data="{ activeService: null, modalPrivacy: false }">
+
+    <header class="fixed w-full z-50 border-b border-slate-100 glass">
+        <nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold italic shadow-lg">F</div>
+                <span class="text-xl font-extrabold tracking-tighter">FMB <span class="text-blue-600">TRANSMOBILITÉ</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+                <a href="#services" class="text-slate-600 hover:text-blue-600 transition">Expertise</a>
+                <a href="#histoire" class="text-slate-600 hover:text-blue-600 transition">Héritage</a>
+                <a href="https://thiernombengue.github.io/fmb-invest-plan/" target="_blank" class="text-blue-600 font-bold hover:underline transition italic">Plan d'investissement</a>
+                <a href="#contact" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-blue-700 transition shadow-lg text-xs uppercase tracking-widest">Confier un véhicule</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative pt-48 pb-24 bg-slate-50 overflow-hidden">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <span class="inline-block px-4 py-2 mb-6 text-[11px] font-bold text-blue-700 bg-blue-100 rounded-full uppercase tracking-widest">Leadership Dakarois</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-tight mb-8 tracking-tight italic">Rigueur historique, <span class="text-blue-600">gestion</span> d'avenir.</h1>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl italic">
+                    Propriétaires et investisseurs : bénéficiez de l'expérience d'un pilier du transport sénégalais, augmentée par nos outils digitaux exclusifs.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-200 hover:scale-105 transition">Parlons de votre projet</a>
+                    <a href="https://thiernombengue.github.io/fmb-invest-plan/" target="_blank" class="px-8 py-4 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold shadow-sm hover:bg-slate-50 transition italic">Calculer ma rentabilité</a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&q=80&w=1000" class="rounded-[40px] shadow-2xl border-8 border-white object-cover h-[500px] w-full" alt="Transport">
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+                    <p class="text-3xl font-black text-blue-600">08</p>
+                    <p class="text-[10px] uppercase font-bold text-slate-400">Unités gérées</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-extrabold mb-6 italic tracking-tight">Expertise Métier & Solutions</h2>
+                <p class="text-slate-500 italic">Cliquez sur nos domaines d'intervention pour découvrir le détail de nos engagements opérationnels.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div @click="activeService = 'bus'" class="bg-white p-10 rounded-[40px] border border-slate-100 shadow-sm hover:shadow-2xl transition-all cursor-pointer group">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 italic">Gestion de Bus</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed italic">Organisation institutionnelle : gestion du personnel, maintenance et transparence des recettes.</p>
+                    <span class="text-blue-600 font-bold text-xs uppercase tracking-widest border-b-2 border-blue-600 pb-1">Détails de l'offre +</span>
+                </div>
+
+                <div @click="activeService = 'yango'" class="bg-white p-10 rounded-[40px] border border-slate-100 shadow-sm hover:shadow-2xl transition-all cursor-pointer group">
+                    <div class="w-16 h-16 bg-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition">
+                        <span class="font-black">YG</span>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 italic">Gestion Yango</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed italic">Solutions clés en main pour investisseurs locaux et diaspora. Rentabilité VTC sécurisée.</p>
+                    <span class="text-yellow-600 font-bold text-xs uppercase tracking-widest border-b-2 border-yellow-500 pb-1">Détails de l'offre +</span>
+                </div>
+
+                <div @click="activeService = 'app'" class="bg-slate-900 p-10 rounded-[40px] text-white shadow-2xl hover:scale-[1.02] transition-all cursor-pointer group border border-white/5">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M10.5 18H13.5V16.5H10.5V18ZM19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 italic text-blue-400">Trans_Gestion</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed italic">Notre application exclusive pour le suivi comptable et technique en temps réel.</p>
+                    <span class="text-white font-bold text-xs uppercase tracking-widest border-b-2 border-blue-400 pb-1">Lancer l'outil +</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <template x-if="activeService">
+        <div class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/95 backdrop-blur-md" @click.self="activeService = null">
+            <div class="bg-white w-full max-w-2xl rounded-[40px] p-12 relative shadow-2xl overflow-y-auto max-h-[90vh] animate-in slide-in-from-bottom-8 duration-300">
+                <button @click="activeService = null" class="absolute top-8 right-8 text-slate-300 hover:text-slate-900 transition">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+                
+                <div x-show="activeService === 'bus'">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-[10px] mb-2 block">Exploitation Urbaine</span>
+                    <h3 class="text-4xl font-black mb-8 italic text-slate-900">Gestion complète de Bus</h3>
+                    <div class="space-y-6 text-slate-600">
+                        <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-blue-600">
+                            <h4 class="font-black text-slate-900 mb-2 uppercase text-sm">Contrôle des Recettes</h4>
+                            <p class="text-sm italic italic leading-relaxed">Mise en place de bordereaux de suivi journaliers. Versement garanti chaque soir avec rapport numérique envoyé au propriétaire.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-blue-600">
+                            <h4 class="font-black text-slate-900 mb-2 uppercase text-sm">Gestion RH & Sociale</h4>
+                            <p class="text-sm italic leading-relaxed">Sélection rigoureuse des chauffeurs et receveurs. Établissement des contrats légaux pour protéger le propriétaire contre les litiges prud'homaux.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border-l-4 border-blue-600">
+                            <h4 class="font-black text-slate-900 mb-2 uppercase text-sm">Maintenance Industrielle</h4>
+                            <p class="text-sm italic leading-relaxed">Suivi strict des vidanges et des pièces d'usure. Nous anticipons les pannes pour garantir que le bus reste sur la route 26 jours par mois minimum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-show="activeService === 'yango'">
+                    <span class="text-yellow-600 font-bold uppercase tracking-widest text-[10px] mb-2 block">VTC & Diaspora</span>
+                    <h3 class="text-4xl font-black mb-8 italic text-slate-900">Expertise Yango</h3>
+                    <p class="mb-8 text-slate-500 italic">Nous transformons votre véhicule particulier en une source de revenus automatique.</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-6 bg-yellow-50 rounded-2xl italic">
+                            <p class="font-black text-yellow-800 text-xs mb-2 uppercase tracking-widest">Pour la Diaspora</p>
+                            <p class="text-sm text-yellow-900">Achat du véhicule par vos soins, prise en charge totale par nos services à l'arrivée (Mutation, agrément, chauffeur).</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl italic">
+                            <p class="font-black text-slate-800 text-xs mb-2 uppercase tracking-widest">Suivi GPS 24/7</p>
+                            <p class="text-sm text-slate-600">Contrôle permanent des zones de circulation et des comportements de conduite pour préserver le moteur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-show="activeService === 'app'">
+                    <span class="text-blue-400 font-bold uppercase tracking-widest text-[10px] mb-2 block">Innovation Digitale</span>
+                    <h3 class="text-4xl font-black mb-8 italic text-slate-900">FMB Trans_Gestion</h3>
+                    <p class="mb-8 text-slate-600 italic">Notre application n'est pas qu'un outil de comptabilité, c'est votre tableau de bord stratégique.</p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 p-4 bg-slate-50 rounded-xl italic italic font-medium"><span class="text-blue-600">01.</span> Historique d'entretien numérisé (zéro oubli de vidange).</li>
+                        <li class="flex gap-4 p-4 bg-slate-50 rounded-xl italic italic font-medium"><span class="text-blue-600">02.</span> Accès direct aux bilans de recettes mensuels.</li>
+                        <li class="flex gap-4 p-4 bg-slate-50 rounded-xl italic italic font-medium"><span class="text-blue-600">03.</span> Archivage sécurisé des pièces administratives.</li>
+                    </ul>
+                </div>
+
+                <a href="#contact" @click="activeService = null" class="mt-10 block w-full text-center py-5 bg-slate-900 text-white rounded-2xl font-bold uppercase tracking-[0.2em] text-xs transition hover:bg-blue-600">Confier mon véhicule maintenant</a>
+            </div>
+        </div>
+    </template>
+
+    <section id="histoire" class="py-32 bg-heritage text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <span class="text-blue-400 font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Fondations & Valeurs</span>
+                <h2 class="text-5xl lg:text-7xl font-black mb-12 italic tracking-tighter leading-none">L'Héritage d'un <br><span class="text-blue-500 underline decoration-white/20 underline-offset-8">Visionnaire</span>.</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div class="space-y-6 text-xl text-slate-300 italic leading-relaxed font-light">
+                        <p>
+                            Notre entreprise n'est pas née par hasard. Elle est la continuité d'une vie dédiée au mouvement. <strong>Fallou Mbengue</strong>, notre figure de proue, a façonné les standards du transport moderne à Dakar.
+                        </p>
+                        <p>
+                            En tant que membre influent du bureau de l'<strong>AFTU</strong>, il a participé aux grandes réformes du transport urbain. Sa rigueur lui a valu la responsabilité de coordonner la mobilité du personnel de l'<strong>Aéroport de Dakar</strong>.
+                        </p>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-center p-8 bg-white/5 rounded-[32px] border border-white/10 backdrop-blur-sm">
+                            <span class="text-5xl font-black text-blue-500">AFTU</span>
+                            <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Siège historique <br>au Bureau Exécutif</p>
+                        </div>
+                        <div class="flex gap-6 items-center p-8 bg-white/5 rounded-[32px] border border-white/10 backdrop-blur-sm">
+                            <span class="text-5xl font-black text-blue-500">AIRP</span>
+                            <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Coordination Stratégique <br>du Staff Aéroportuaire</p>
+                        </div>
+                        <p class="text-sm text-slate-400 italic">"FMB TransMobilité est le sceau de cette confiance héritée, alliant cette rigueur d'antan à la puissance du digital actuel."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-8 italic">Nous joindre à Dakar</h2>
+                    <p class="text-slate-500 text-lg mb-12 italic">Notre direction est située au cœur de l'activité du transport à Petersen.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6">
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center shadow-sm">📍</div>
+                            <p class="font-bold text-slate-800 italic uppercase tracking-wider">Dakar Petersen, Sénégal</p>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center shadow-sm italic font-black text-xs uppercase italic">WA</div>
+                            <p class="font-bold text-slate-800 italic">06 95 42 96 71</p>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-14 h-14 bg-slate-50 text-slate-600 rounded-2xl flex items-center justify-center shadow-sm">✉️</div>
+                            <p class="font-bold text-slate-800 italic">ndamanaing99@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-12 rounded-[40px] shadow-sm border border-slate-100">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="Prénom" class="w-full p-5 bg-white rounded-2xl outline-none focus:ring-2 focus:ring-blue-600 transition italic">
+                            <input type="tel" placeholder="Téléphone" class="w-full p-5 bg-white rounded-2xl outline-none focus:ring-2 focus:ring-blue-600 transition italic">
+                        </div>
+                        <select class="w-full p-5 bg-white rounded-2xl outline-none focus:ring-2 focus:ring-blue-600 font-bold text-slate-700 italic">
+                            <option>Confier un Bus</option>
+                            <option>Investissement Yango</option>
+                            <option>Autres demandes</option>
+                        </select>
+                        <textarea placeholder="Décrivez votre véhicule (Marque, année, état)..." rows="4" class="w-full p-5 bg-white rounded-2xl outline-none focus:ring-2 focus:ring-blue-600 transition italic"></textarea>
+                        <button class="w-full py-5 bg-blue-600 text-white rounded-2xl font-black uppercase tracking-[0.2em] text-xs shadow-xl shadow-blue-100">Soumettre le véhicule</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-16 text-white overflow-hidden relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16 relative z-10">
+                <div class="max-w-xs">
+                    <h3 class="text-2xl font-black italic tracking-tighter mb-4">FMB <span class="text-blue-500 font-normal tracking-normal">TransMobilité</span></h3>
+                    <p class="text-slate-400 text-sm leading-relaxed italic">La rigueur héritée de Fallou Mbengue au service de votre rentabilité à Dakar Petersen.</p>
+                </div>
+                <div class="flex flex-wrap gap-8">
+                    <button @click="modalPrivacy = true" class="px-8 py-4 bg-red-600 text-white font-black text-[10px] uppercase tracking-widest rounded-full hover:bg-red-700 transition shadow-lg">Supprimer mes données (APP)</button>
+                    <a href="https://thiernombengue.github.io/fmb-invest-plan/" target="_blank" class="px-8 py-4 bg-white/5 border border-white/10 text-blue-400 font-black text-[10px] uppercase tracking-widest rounded-full hover:bg-white/10">Plan d'investissement</a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-[10px] text-slate-500 font-bold uppercase tracking-[0.3em] flex flex-col md:flex-row justify-between gap-4 italic">
+                <p>© 2025 FMB SERVICES SARL - SÉNÉGAL</p>
+                <p>Petersen - Dakar - 06 95 42 96 71</p>
+            </div>
+        </div>
+    </footer>
+
+    <div x-show="modalPrivacy" x-cloak class="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-slate-900/98 backdrop-blur-2xl">
+        <div @click.away="modalPrivacy = false" class="bg-white w-full max-w-xl rounded-[40px] p-12 shadow-3xl">
+            <h2 class="text-3xl font-black text-red-600 italic uppercase mb-4 leading-none">Suppression de compte</h2>
+            <p class="text-slate-500 text-sm mb-8 italic">Vous utilisez l'application <strong>FMB Trans_Gestion</strong> et souhaitez retirer vos informations ?</p>
+            <form class="space-y-4" @submit.prevent="modalPrivacy = false; alert('Demande reçue.')">
+                <input type="text" placeholder="Nom complet (Utilisateur App)" required class="w-full p-5 bg-slate-100 rounded-2xl outline-none focus:ring-2 focus:ring-red-500 font-bold italic">
+                <input type="tel" placeholder="Numéro lié au compte" required class="w-full p-5 bg-slate-100 rounded-2xl outline-none focus:ring-2 focus:ring-red-500 font-bold italic">
+                <button class="w-full py-5 bg-red-600 text-white font-black rounded-2xl shadow-xl shadow-red-100 hover:scale-[1.02] transition">VALIDER LA SUPPRESSION</button>
+                <button type="button" @click="modalPrivacy = false" class="w-full py-4 text-slate-400 font-bold text-xs uppercase tracking-widest">Annuler</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
